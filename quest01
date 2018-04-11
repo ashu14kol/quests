@@ -1,0 +1,514 @@
+1.
+
+boolean b1, b2;
+String s1 = "1", s2;
+double d1, double d2;
+int i1; int i2;
+int i3; i4;
+
+which is right and which line will give compiler error ??
+
+*******************************************************************
+2.
+what will be output of following program ?
+public class Demo
+{
+	public static void main( String args[])
+	{
+		System.out.println(args[0] + "and  : " +args[1]);
+	}
+}
+
+run the program using : java Demo hello
+
+A. Compilation fails 
+B. hello and : null
+C. Runtime exception is thrown
+D. none of the above
+
+*********************************************************************
+3.
+1.    int []a = {1,2,3,4,5,6};
+2.    int i = a.length - 1;
+3.    
+4.    while(i>=0){
+5.      System.out.print(a[i]);
+6.      i--;
+7.    } 
+
+What is the result?
+
+ A. 123456
+ B. An exception could be thrown at runtime.
+ C. 654321
+ D. nothing
+ E. 65432
+ F. 12345
+
+ ******************************************************************
+ 4.
+ 
+  class Ex6{
+2.  public static void main(String args[]){
+3.    int x = 0, y=10;          
+4.      try{
+5.        y /=x; 
+6.        }
+7.    System.out.print("/ by 0");
+8.      catch(Exception e){
+9.        System.out.print("error");
+10.      }
+11.  }  } 
+
+
+What is the result?
+
+
+ A. 0 
+ B. error
+ C. Compilation fails 
+ D. An uncaught exception is thrown at runtime. 
+ E. No output
+ 
+ **********************************************************************
+ 5.
+ Given
+
+- A and E are classes
+- B and D are interfaces 
+- C is an abstract class
+
+Which are true? (Choose 3)
+
+ A. class F implements B,C{ }
+ B. class F implements B{ }
+ C. class Fextends A,E{ }
+ D. class F extends E{ }
+ E. class F implements B,D{ }
+ 
+ **************************************************************************
+ 6.
+ 
+ Given
+
+- A and E are classes
+- B and D are interfaces
+
+Which are true? (Choose 2)
+
+ A. interface F implements B,D{ }
+ B. interface F implements D{ }
+ C. interface F extends D{ }
+ D. interface F extends E{ }
+ E. interface F extends B,D{ }
+ 
+ ****************************************************************************
+ 7.
+ 
+1.  class Ex1{
+2.      public static void main(String[] args) {
+3.    int a[] = { 1,2,3,4};
+4.  System.out.print(a instanceof Object);
+5.      }
+6.    }
+
+Note: The keyword "instanceof" is use to check whether an object is of a particular type
+
+What is the result?
+
+ 
+
+ A. Will produce output as false.
+ B. Compilation fails due to error at line 3.
+ C. Will produce output as true.
+ D. Compilation fails due to error at line 4.
+ E. Length of this array is 3.
+ 
+ ****************************************************************************
+ 8.
+
+Given
+
+1.  class Ex1{
+2.    public static void main(String[] args) {
+3.      int a[][] = new int[3][];
+4.       a[1] = new int[]{1,2,3};
+5.       a[2] = new int[]{4,5};
+6.    System.out.print(a[1][1]);
+7.    }
+8.  }
+
+Which is the output?
+
+ A. Compilation fails due to line 3.
+ B. Compilation fails due to line 4.
+ C. An exception will be thrown in runtime.
+ D. 2
+ E. 3
+ F. 5
+*******************************************************************************
+9.
+
+Choose the three legal identifiers.
+
+ A. 1stName
+ B. _4_
+ C. @name
+ D. $
+ E. getSize
+*******************************************************************************
+10.
+
+Given
+
+1.  class Ex1{
+2.    int a=10;
+3.      public static void main(String[] args) {
+4.     new Ex1().print();
+5.    }
+6.  public void print(){
+7.    int a = 8;
+8.    System.out.print(a + " ");
+9.    }
+10.  }
+
+What is the result?
+
+ 
+
+ A. 10
+ B. Compilation fails. 
+ C. 18
+ D. Output is unpredicatable.
+ E. 8
+************************************************************************************
+11.
+
+Given
+
+1.  class Ex1{
+2.      public static void main(String[] args) {
+3.     new Ex1().pass();
+4.    }
+5.    
+6.  public void pass(){
+7.    int a =10 , b=20;
+8.    print(a) ;
+9.    }
+10.    
+11.  public void print(int a){
+12.    int c = b/a;
+13.    System.out.print(c);
+14.    }
+15.  }
+
+What is the result?
+
+ A. 2
+ B. Compilation fails due to an error on line 8. 
+ C. Compilation fails due to an error on line 7. 
+ D. 0
+ E. Compilation fails due to an error on line 12.
+ 
+ **********************************************************************
+ 12.
+ 
+ Given
+
+1.  class Ex1{
+2.    static int x = 10;  
+3.    public static void main(String[] args) {
+4.     for(int x=0;x<5;x++){
+5.        }
+6.      System.out.print(x);
+7.    }
+8.  }
+
+What is the result?
+
+
+ A. 4
+ B. 5
+ C. Compilation fails.
+ D. 10
+ E. A runtime exception will be thrown.
+ 
+ **********************************************************************
+ 13.
+
+Given
+
+1.  class Person{
+2.  Person(String s,int i ){
+3.      ++pid;
+4.      name=s;
+5.      age=i;
+6.      }
+7.    static int pid;
+8.    int age;
+9.    String name;
+10.      }
+11.  class Test{
+12.    public static void main(String args[]){
+13.    Person p1 = new Person("John" , 22);
+14.    Test te = new Test();
+15.    Person p2 = te.change(p1);
+16.    System.out.println(p2.pid +" "+p2.name+ " "+p2.age);
+17.    System.out.print(p1.pid +" "+p1.name+" "+ p1.age);
+18.  }
+19.  private Person change(Object o){
+20.  Person p2 = (Person)o;
+21.  p2.age = 25;
+22.  return p2;
+23.  }
+24.  }
+
+What is the result?
+
+
+A.
+1 John 25
+1 John 25
+B.
+1 John 25
+1 John 22
+C.
+1 John 22
+1 John 22
+D.
+ClassCastException is thrown at runtime.
+E.
+Compilation fails.
+
+***********************************************************************
+14.
+
+Given
+
+1.  class Ex1{
+2.  public static void main(String args[]){
+3.  int x = 10;
+4.  int y = new Ex1().change(x);
+5.    System.out.print(x+y);
+6.  }
+7.  int change(int x){
+8.  x=12;
+9.  return x;
+10.  }
+11.  }
+
+What is the result?
+
+ A. 20
+ B. 22
+ C. Compilation fails.
+ D. 24
+ E. An exception is thrown at runtime.
+ 
+ ***********************************************************************
+ 15.
+ Given
+
+1.  class S{
+2.  public static void main(String [] args){
+3.  String s = "Java";
+4.  s.concat(" SE 6");
+5.  s.replace('6','7');
+6.  System.out.print(s);
+7.  }
+8.  }
+
+What is the result??
+
+ A. Java SE 6
+ B. Java SE 7
+ C. Java SE
+ D. Java
+ E. Compilation fails.
+ 
+ ************************************************************************
+ 16.
+ Page 14 of 14
+Question 15:
+
+Given
+
+1.  class S{
+2.  public static void main(String [] args){
+3.  String s = "Java";
+4.  s.concat(" SE 6");
+5.  s.toLowerCase();
+6.  System.out.print(s);
+7.  //how many?
+8.  }
+9.  }
+
+How many String objects have been created when the code reaches line 7?
+
+ 
+ A. 1
+ B. 2
+ C. 3
+ D. 4
+ E. 5
+ **************************************************************************
+ 17.
+ Given:
+import java.util.ArrayList;
+import java.util.List;
+public class JavaSETest {
+ public static void main(String[] args) {
+ List<Integer> elements = new ArrayList<>();
+ elements.add(10);
+ int firstElmnt = elements.get(1);
+ System.out.println(firstElmnt);
+ }
+}
+What is the result?
+A) null
+B) 10
+C) 0
+D) An IndexOutOfBoundsException is thrown at runtime
+
+************************************************************************
+18.
+
+Given the code fragment:
+// Line n1
+switch (cardVal) {
+ case 4: case 5: case 6:
+ case 7: case 8:
+ System.out.println("Hit");
+ break;
+ case 9: case 10: case 11:
+ System.out.println("Double");
+ break;
+ case 15: case 16:
+ System.out.println("Surrender");
+ break;
+ default:
+ System.out.println("Stand");
+}
+Which two code fragments can be inserted at Line n1, independently, enable to print Stand?
+A) int cardVal = 6;
+B) int cardVal = 10;
+C) int cardVal = 14;
+D) int cardVal = 18;
+
+*********************************************************************************
+19.
+
+Given:
+abstract class Writer {
+ public static void write() {
+ System.out.println("Writing...");
+ }
+}
+class Author extends Writer {
+ public static void write() {
+ System.out.println("Writing book");
+ }
+}
+public class Programmer extends Writer {
+ public static void write() {
+ System.out.println("Writing code");
+ }
+ public static void main(String[] args) {
+ Writer w = new Programmer();
+ w.write();
+ }
+}
+What is the result?
+A) Writing...
+B) Writing book
+C) Writing code
+D) Compilation fails
+**********************************************************************************
+20.
+Given:
+class SuperClass {
+ SuperClass(int x) {
+ System.out.println("Super");
+ }
+}
+public class SubClass extends SuperClass {
+ SubClass() {
+ // Line n1
+ System.out.println("Sub 2");
+ }
+}
+Which statement, when inserted at Line n1, enables the code to compile?
+A) this(10);
+B) super(10);
+C) SuperClass(10);
+D) super.SuperClass (10);
+
+************************************************************************************
+21.
+Given the code fragment:
+public class TestClass {
+ public static void main(String[] args) {
+ List<String> items = new ArrayList<>();
+ items.add("Pen");
+ items.add("Pencil");
+ items.add("Box");
+ for (String i : items) {
+ if (i.indexOf("P") == 0) {
+ continue;
+ } else {
+ System.out.print(i+" ");
+ }
+ }
+ }
+}
+What is the result?
+A) Pen Pencil Box
+B) Pen Pencil
+C) Box
+D) Compilation fails
+*************************************************************************************
+22.
+Which access modifier makes a member available only to classes within the same package or
+subclasses?
+A) private
+B) protected
+C) public
+D) package-private
+**********************************************************************
+23.
+public class Test {
+ public static void main(String[] args) {
+ int x = 10;
+ int y = 2;
+ try {
+ for (int z = 2; z >= 0; z--) {
+ int ans = x / z;
+System.out.print(ans+ " ");
+ }
+ } catch (Exception e1) {
+ System.out.println("E1");
+ } catch (ArithmeticException e1) {
+ System.out.println("E2");
+ }
+ }
+}
+What is the result?
+A) E1
+B) E2
+C) 5 10 E1
+D) Compilation fails.
+
+**********************************************************************
+24.
+. Given the code fragment:
+ StringBuilder s1 = new StringBuilder("Java");
+ String s2 = "Love";
+ s1.append(s2);
+ s1.substring(4);
+ int foundAt = s1.indexOf(s2);
+System.out.println(foundAt);
+What is the result?
+A) -1
+B) 3
+C) 4
+D) A StringIndexOutOfBoundsException is thrown at runtime.
