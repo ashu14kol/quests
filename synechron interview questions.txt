@@ -1,0 +1,89 @@
+Syechron
+
+Interview Questions
+
+    My both rounds were purely technical based on Java, Spring and Hibernate. I have made a list of questions combined which I have been asked there.
+
+    - There are three methods as below.
+    void method(double d, int i){}
+    void method(int i, double d){}
+    void method(String s1, String s2){}
+    Now, if I call method(0,0). Which method will be called?
+    - Tell me 5 things which I can do to override any method.
+    - Why Strings are immutable?
+    - Write your own immutable class. Then following questions of Deep cloning.
+    - Which are the Wrapper classes in java?
+    - Write a program to reverse a string without using any inbuilt direct function.
+    - Write a program to check numbers till 10 are even or odd using recursion.
+    - Write a program to check given string is Palindrome or not.
+    - Can we write custom exception? If yes, how?
+    - What is contract between equals() and hashcode(). Show me by writing code if you want to override both methods.
+    - I have a class i.e Employee which has two properties id and name. If I want to sort list of employees by their names, what should I do?
+    - Difference between synchronized and Lock.
+    - Difference between synchronizedMap and ConcurrentHashMap.
+    - Producer/Consumer problem using wait and notify
+    - Write a program of Producer/Consumer problem using BlockingQueue.
+    - Spring IOC. What are different ways to achieve Spring IOC?
+    - Difference between BeanFactory and ApplicationContext.
+    - Spring Bean Lifecycle.
+    - How to create RESTful Webservice in Spring.
+    - What to do if I want to get 1st number employee details by hitting URL www.restapi.com/employee/1. Write a controller method for the same.
+    - What are the properties to configure Hibernate?
+    - What is dialect? Why is it used?
+    - How do we write query in Hibernate same as ‘SELECT * FROM EMPLOYEES’ in SQL?
+    - What are alternatives to write queries in Hibernate apart from HQL?
+    - Write configuration for one-to-many relationship between two classes in Hibernate.
+    - Difference between save() and merge().
+    - List<ParentClass> list = new ArrayList<ChildClass>();
+    What will happen?
+    - I have one method void method(ArrayList<String> list){}.
+    I’m calling this method by passing raw-type arraylist i.e. method(new ArrayList()). What will happen?
+    - How to convert given String to integer? If I do Integer.parseInt("chintan"); what will happen?
+    - What are the classes you have used for Stream io?
+    - What is the difference between Aggregation and Composition?   
+
+
+
+
+
+
+
+Interview Questions
+
+    First round:
+
+    jvm jre and jdk ?
+    static method can be override ?
+    diff b/w list and set
+    diff b/w hashset and treeset
+    how sorting is performed in treeset ?
+    diff b/w sleep and wait?
+    diff b/w noclasdeffound and classnotfound exception
+    how u catch exception through jdbc templates
+    create your own custom exception class
+
+    design pattern of dispatcherservlet
+    modules of spring
+    scope of bean
+    prototype through singlton and vice versa ?
+    same class with diferent bean id in xml file and if yes then how many instances ?
+
+    mappings in hibernate
+
+    Second Round :
+
+    diff between hashmap and concurentHashmap
+    concurentHashmap in detail
+    Bean Cycle
+    MVC pattern and its flow
+    Callable interface
+    Why hibernate and its advantages?
+    caching in hibernate
+    how to enable second level caching ?
+    Indexing- clustered - non-clustered   
+
+
+
+
+
+1) Exceptional Handing in Spring
